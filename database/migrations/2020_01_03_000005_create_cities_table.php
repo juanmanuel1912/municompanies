@@ -13,6 +13,12 @@ class CreateCitiesTable extends Migration
 
             $table->string('name');
 
+            $table->string('distrito')->nullable();
+
+            $table->string('departamento')->nullable();
+
+            $table->string('provincia')->nullable();
+
             $table->timestamps();
 
             $table->softDeletes();

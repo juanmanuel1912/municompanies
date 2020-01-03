@@ -77,4 +77,11 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     // Teams
     Route::delete('teams/destroy', 'TeamController@massDestroy')->name('teams.massDestroy');
     Route::resource('teams', 'TeamController');
+
+    // Centros Educativos
+    Route::delete('centros-educativos/destroy', 'CentrosEducativosController@massDestroy')->name('centros-educativos.massDestroy');
+    Route::post('centros-educativos/media', 'CentrosEducativosController@storeMedia')->name('centros-educativos.storeMedia');
+    Route::post('centros-educativos/parse-csv-import', 'CentrosEducativosController@parseCsvImport')->name('centros-educativos.parseCsvImport');
+    Route::post('centros-educativos/process-csv-import', 'CentrosEducativosController@processCsvImport')->name('centros-educativos.processCsvImport');
+    Route::resource('centros-educativos', 'CentrosEducativosController');
 });

@@ -276,6 +276,26 @@ class PermissionsTableSeeder extends Seeder
                 'id'    => '67',
                 'title' => 'team_access',
             ],
+            [
+                'id'    => '68',
+                'title' => 'centros_educativo_create',
+            ],
+            [
+                'id'    => '69',
+                'title' => 'centros_educativo_edit',
+            ],
+            [
+                'id'    => '70',
+                'title' => 'centros_educativo_show',
+            ],
+            [
+                'id'    => '71',
+                'title' => 'centros_educativo_delete',
+            ],
+            [
+                'id'    => '72',
+                'title' => 'centros_educativo_access',
+            ],
         ];
 
         Permission::insert($permissions);

@@ -263,6 +263,14 @@
                             {{ $company->encargado }}
                         </td>
                     </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.company.fields.cod_zip') }}
+                        </th>
+                        <td>
+                            {{ $company->cod_zip }}
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <div class="form-group">

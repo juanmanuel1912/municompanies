@@ -64,7 +64,7 @@ class CategoriesTypesController extends Controller
     {
         abort_if(Gate::denies('categories_type_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $categoriesType->load('rubro', 'team');
+        $categoriesType->load('rubro', 'team', 'categoriesTypesCompanies', 'categoriesTypesCentrosEducativos');
 
         return view('admin.categoriesTypes.show', compact('categoriesType'));
     }

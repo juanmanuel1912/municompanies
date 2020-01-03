@@ -57,6 +57,8 @@ class CreateCompaniesTable extends Migration
 
             $table->boolean('active')->default(0)->nullable();
 
+            $table->string('cod_zip')->nullable();
+
             $table->timestamps();
 
             $table->softDeletes();

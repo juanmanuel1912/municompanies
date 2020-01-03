@@ -164,6 +164,16 @@
                     </a>
                 </li>
             @endcan
+            @can('centros_educativo_access')
+                <li class="nav-item">
+                    <a href="{{ route("admin.centros-educativos.index") }}" class="nav-link {{ request()->is('admin/centros-educativos') || request()->is('admin/centros-educativos/*') ? 'active' : '' }}">
+                        <i class="fa-fw fas fa-cogs nav-icon">
+
+                        </i>
+                        {{ trans('cruds.centrosEducativo.title') }}
+                    </a>
+                </li>
+            @endcan
             <li class="nav-item">
                 <a href="#" class="nav-link" onclick="event.preventDefault(); document.getElementById('logoutform').submit();">
                     <i class="nav-icon fas fa-fw fa-sign-out-alt">

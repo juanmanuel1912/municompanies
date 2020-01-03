@@ -32,6 +32,11 @@ class CategoriesType extends Model
         return $this->hasMany(Company::class, 'categories_types_id', 'id');
     }
 
+    public function categoriesTypesCentrosEducativos()
+    {
+        return $this->hasMany(CentrosEducativo::class, 'categories_types_id', 'id');
+    }
+
     public function rubro()
     {
         return $this->belongsTo(CategoriesItem::class, 'rubro_id');

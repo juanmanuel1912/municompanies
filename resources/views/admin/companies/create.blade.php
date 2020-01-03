@@ -351,6 +351,16 @@
                 <span class="help-block">{{ trans('cruds.company.fields.encargado_helper') }}</span>
             </div>
             <div class="form-group">
+                <label for="cod_zip">{{ trans('cruds.company.fields.cod_zip') }}</label>
+                <input class="form-control {{ $errors->has('cod_zip') ? 'is-invalid' : '' }}" type="text" name="cod_zip" id="cod_zip" value="{{ old('cod_zip', '') }}">
+                @if($errors->has('cod_zip'))
+                    <div class="invalid-feedback">
+                        {{ $errors->first('cod_zip') }}
+                    </div>
+                @endif
+                <span class="help-block">{{ trans('cruds.company.fields.cod_zip_helper') }}</span>
+            </div>
+            <div class="form-group">
                 <button class="btn btn-danger" type="submit">
                     {{ trans('global.save') }}
                 </button>

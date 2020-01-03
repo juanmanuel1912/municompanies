@@ -59,7 +59,7 @@ class CitiesController extends Controller
     {
         abort_if(Gate::denies('city_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $city->load('team');
+        $city->load('team', 'cityTerritorioVecis', 'ciudadCompanies', 'ciudadCentrosEducativos', 'departamentoCentrosEducativos', 'provinciaCentrosEducativos', 'distritoCentrosEducativos');
 
         return view('admin.cities.show', compact('city'));
     }

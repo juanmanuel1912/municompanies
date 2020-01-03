@@ -64,7 +64,7 @@ class TerritorioVeciController extends Controller
     {
         abort_if(Gate::denies('territorio_veci_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $territorioVeci->load('city', 'team');
+        $territorioVeci->load('city', 'team', 'territorioVeciCompanies', 'territorioVeciCentrosEducativos');
 
         return view('admin.territorioVecis.show', compact('territorioVeci'));
     }
