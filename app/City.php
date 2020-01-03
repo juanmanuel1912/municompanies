@@ -21,9 +21,12 @@ class City extends Model
     protected $fillable = [
         'name',
         'team_id',
+        'distrito',
+        'provincia',
         'created_at',
         'updated_at',
         'deleted_at',
+        'departamento',
     ];
 
     public function cityTerritorioVecis()
@@ -34,6 +37,26 @@ class City extends Model
     public function ciudadCompanies()
     {
         return $this->hasMany(Company::class, 'ciudad_id', 'id');
+    }
+
+    public function ciudadCentrosEducativos()
+    {
+        return $this->hasMany(CentrosEducativo::class, 'ciudad_id', 'id');
+    }
+
+    public function departamentoCentrosEducativos()
+    {
+        return $this->hasMany(CentrosEducativo::class, 'departamento_id', 'id');
+    }
+
+    public function provinciaCentrosEducativos()
+    {
+        return $this->hasMany(CentrosEducativo::class, 'provincia_id', 'id');
+    }
+
+    public function distritoCentrosEducativos()
+    {
+        return $this->hasMany(CentrosEducativo::class, 'distrito_id', 'id');
     }
 
     public function team()

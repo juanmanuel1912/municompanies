@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'userManagement' => [
+    'userManagement'   => [
         'title'          => 'User management',
         'title_singular' => 'User management',
     ],
-    'permission'     => [
+    'permission'       => [
         'title'          => 'Permissions',
         'title_singular' => 'Permission',
         'fields'         => [
@@ -21,7 +21,7 @@ return [
             'deleted_at_helper' => '',
         ],
     ],
-    'role'           => [
+    'role'             => [
         'title'          => 'Roles',
         'title_singular' => 'Role',
         'fields'         => [
@@ -39,7 +39,7 @@ return [
             'deleted_at_helper'  => '',
         ],
     ],
-    'user'           => [
+    'user'             => [
         'title'          => 'Users',
         'title_singular' => 'User',
         'fields'         => [
@@ -67,11 +67,11 @@ return [
             'team_helper'              => '',
         ],
     ],
-    'basicCRM'       => [
+    'basicCRM'         => [
         'title'          => 'Basic CRM',
         'title_singular' => 'Basic CRM',
     ],
-    'crmStatus'      => [
+    'crmStatus'        => [
         'title'          => 'Statuses',
         'title_singular' => 'Status',
         'fields'         => [
@@ -87,7 +87,7 @@ return [
             'deleted_at_helper' => '',
         ],
     ],
-    'crmCustomer'    => [
+    'crmCustomer'      => [
         'title'          => 'Customers',
         'title_singular' => 'Customer',
         'fields'         => [
@@ -119,7 +119,7 @@ return [
             'deleted_at_helper'  => '',
         ],
     ],
-    'crmNote'        => [
+    'crmNote'          => [
         'title'          => 'Notes',
         'title_singular' => 'Note',
         'fields'         => [
@@ -137,7 +137,7 @@ return [
             'deleted_at_helper' => '',
         ],
     ],
-    'crmDocument'    => [
+    'crmDocument'      => [
         'title'          => 'Documents',
         'title_singular' => 'Document',
         'fields'         => [
@@ -159,25 +159,31 @@ return [
             'deleted_at_helper'    => '',
         ],
     ],
-    'city'           => [
+    'city'             => [
         'title'          => 'Ciudades',
         'title_singular' => 'Ciudade',
         'fields'         => [
-            'id'                => 'ID',
-            'id_helper'         => '',
-            'name'              => 'Ciudad',
-            'name_helper'       => '',
-            'created_at'        => 'Created at',
-            'created_at_helper' => '',
-            'updated_at'        => 'Updated at',
-            'updated_at_helper' => '',
-            'deleted_at'        => 'Deleted at',
-            'deleted_at_helper' => '',
-            'team'              => 'Team',
-            'team_helper'       => '',
+            'id'                  => 'ID',
+            'id_helper'           => '',
+            'name'                => 'Ciudad',
+            'name_helper'         => '',
+            'created_at'          => 'Created at',
+            'created_at_helper'   => '',
+            'updated_at'          => 'Updated at',
+            'updated_at_helper'   => '',
+            'deleted_at'          => 'Deleted at',
+            'deleted_at_helper'   => '',
+            'team'                => 'Team',
+            'team_helper'         => '',
+            'distrito'            => 'Distrito',
+            'distrito_helper'     => '',
+            'departamento'        => 'Departamento',
+            'departamento_helper' => '',
+            'provincia'           => 'Provincia',
+            'provincia_helper'    => '',
         ],
     ],
-    'categoriesItem' => [
+    'categoriesItem'   => [
         'title'          => 'Rubros',
         'title_singular' => 'Rubro',
         'fields'         => [
@@ -195,7 +201,7 @@ return [
             'team_helper'       => '',
         ],
     ],
-    'categoriesType' => [
+    'categoriesType'   => [
         'title'          => 'tipo empresa',
         'title_singular' => 'tipo empresa',
         'fields'         => [
@@ -215,7 +221,7 @@ return [
             'team_helper'       => '',
         ],
     ],
-    'territorioVeci' => [
+    'territorioVeci'   => [
         'title'          => 'Territorio Vecinal',
         'title_singular' => 'Territorio Vecinal',
         'fields'         => [
@@ -235,7 +241,7 @@ return [
             'team_helper'       => '',
         ],
     ],
-    'company'        => [
+    'company'          => [
         'title'          => 'Empresas Turisticas',
         'title_singular' => 'Empresas Turistica',
         'fields'         => [
@@ -307,9 +313,11 @@ return [
             'team_helper'             => '',
             'active'                  => 'Active',
             'active_helper'           => '',
+            'cod_zip'                 => 'Codigo Zip',
+            'cod_zip_helper'          => '',
         ],
     ],
-    'team'           => [
+    'team'             => [
         'title'          => 'Teams',
         'title_singular' => 'Team',
         'fields'         => [
@@ -323,6 +331,100 @@ return [
             'deleted_at_helper' => '',
             'name'              => 'Name',
             'name_helper'       => '',
+        ],
+    ],
+    'centrosEducativo' => [
+        'title'          => 'Centros Educativos',
+        'title_singular' => 'Centros Educativo',
+        'fields'         => [
+            'id'                      => 'ID',
+            'id_helper'               => '',
+            'codcompany'              => 'Codigo institucion',
+            'codcompany_helper'       => '',
+            'ciudad'                  => 'Ciudad',
+            'ciudad_helper'           => '',
+            'territorio_veci'         => 'Territorio Vecinal',
+            'territorio_veci_helper'  => '',
+            'turno'                   => 'Turno',
+            'turno_helper'            => '',
+            'date_index'              => 'fecha registro',
+            'date_index_helper'       => '',
+            'categories_items'        => 'Rubro',
+            'categories_items_helper' => '',
+            'categories_types'        => 'Tipo de Empresa',
+            'categories_types_helper' => '',
+            'category_empresa'        => 'Categoria empresa',
+            'category_empresa_helper' => '',
+            'name_company'            => 'Nombre Empresa',
+            'name_company_helper'     => '',
+            'address'                 => 'Direccion',
+            'address_helper'          => '',
+            'reference'               => 'Referencia',
+            'reference_helper'        => '',
+            'num_float'               => 'numero de pisos',
+            'num_float_helper'        => '',
+            'float_company'           => 'Piso de la empresa',
+            'float_company_helper'    => '',
+            'caracteristicas'         => 'Caracteristicas',
+            'caracteristicas_helper'  => '',
+            'uso_local'               => 'Uso Local',
+            'uso_local_helper'        => '',
+            'material'                => 'Material Construccion',
+            'material_helper'         => '',
+            'tipoempresa'             => 'Tipo de empresa en el mercado',
+            'tipoempresa_helper'      => '',
+            'latitude'                => 'Latitude',
+            'latitude_helper'         => '',
+            'longitude'               => 'Longitude',
+            'longitude_helper'        => '',
+            'link_google_map'         => 'Link Google Map',
+            'link_google_map_helper'  => '',
+            'active'                  => 'Active',
+            'active_helper'           => '',
+            'description'             => 'Descripcion',
+            'description_helper'      => '',
+            'team'                    => 'Team',
+            'team_helper'             => '',
+            'pdf_map'                 => 'Pdf Map',
+            'pdf_map_helper'          => '',
+            'gallery'                 => 'Gallery',
+            'gallery_helper'          => '',
+            'website'                 => 'Website',
+            'website_helper'          => '',
+            'email'                   => 'Email',
+            'email_helper'            => '',
+            'telefono'                => 'Telefono',
+            'telefono_helper'         => '',
+            'telefono_2'              => 'Telefono 2',
+            'telefono_2_helper'       => '',
+            'encargado'               => 'Encargado',
+            'encargado_helper'        => '',
+            'created_at'              => 'Created at',
+            'created_at_helper'       => '',
+            'updated_at'              => 'Updated at',
+            'updated_at_helper'       => '',
+            'deleted_at'              => 'Deleted at',
+            'deleted_at_helper'       => '',
+            'nivel'                   => 'Nivel',
+            'nivel_helper'            => '',
+            'gestion'                 => 'Gestion',
+            'gestion_helper'          => '',
+            'supervisa'               => 'Supervisa',
+            'supervisa_helper'        => '',
+            'cant_alumnos'            => 'Cantidad Alumnos',
+            'cant_alumnos_helper'     => '',
+            'cant_docentes'           => 'Cantidad Docentes',
+            'cant_docentes_helper'    => '',
+            'cant_secciones'          => 'Cantidad Secciones',
+            'cant_secciones_helper'   => '',
+            'departamento'            => 'Region /Departamento',
+            'departamento_helper'     => '',
+            'provincia'               => 'Provincia',
+            'provincia_helper'        => '',
+            'distrito'                => 'Distrito',
+            'distrito_helper'         => '',
+            'cod_zip'                 => 'Codigo Zip',
+            'cod_zip_helper'          => '',
         ],
     ],
 ];

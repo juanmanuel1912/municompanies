@@ -59,7 +59,7 @@ class CategoriesItemsController extends Controller
     {
         abort_if(Gate::denies('categories_item_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $categoriesItem->load('team');
+        $categoriesItem->load('team', 'rubroCategoriesTypes', 'categoriesItemsCompanies', 'categoriesItemsCentrosEducativos');
 
         return view('admin.categoriesItems.show', compact('categoriesItem'));
     }

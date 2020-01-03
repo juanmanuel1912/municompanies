@@ -36,6 +36,11 @@ class CategoriesItem extends Model
         return $this->hasMany(Company::class, 'categories_items_id', 'id');
     }
 
+    public function categoriesItemsCentrosEducativos()
+    {
+        return $this->hasMany(CentrosEducativo::class, 'categories_items_id', 'id');
+    }
+
     public function team()
     {
         return $this->belongsTo(Team::class, 'team_id');

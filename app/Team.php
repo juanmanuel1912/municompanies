@@ -53,4 +53,9 @@ class Team extends Model
     {
         return $this->hasMany(City::class, 'team_id', 'id');
     }
+
+    public function teamCentrosEducativos()
+    {
+        return $this->hasMany(CentrosEducativo::class, 'team_id', 'id');
+    }
 }

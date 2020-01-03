@@ -117,6 +117,9 @@
                             {{ trans('cruds.company.fields.encargado') }}
                         </th>
                         <th>
+                            {{ trans('cruds.company.fields.cod_zip') }}
+                        </th>
+                        <th>
                             &nbsp;
                         </th>
                     </tr>
@@ -225,6 +228,9 @@
                             </td>
                             <td>
                                 {{ $company->encargado ?? '' }}
+                            </td>
+                            <td>
+                                {{ $company->cod_zip ?? '' }}
                             </td>
                             <td>
                                 @can('company_show')

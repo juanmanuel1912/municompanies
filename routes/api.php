@@ -41,4 +41,8 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 
     // Teams
     Route::apiResource('teams', 'TeamApiController');
+
+    // Centros Educativos
+    Route::post('centros-educativos/media', 'CentrosEducativosApiController@storeMedia')->name('centros-educativos.storeMedia');
+    Route::apiResource('centros-educativos', 'CentrosEducativosApiController');
 });

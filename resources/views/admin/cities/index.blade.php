@@ -30,6 +30,15 @@
                             {{ trans('cruds.city.fields.id') }}
                         </th>
                         <th>
+                            {{ trans('cruds.city.fields.departamento') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.city.fields.provincia') }}
+                        </th>
+                        <th>
+                            {{ trans('cruds.city.fields.distrito') }}
+                        </th>
+                        <th>
                             {{ trans('cruds.city.fields.name') }}
                         </th>
                         <th>
@@ -45,6 +54,15 @@
                             </td>
                             <td>
                                 {{ $city->id ?? '' }}
+                            </td>
+                            <td>
+                                {{ $city->departamento ?? '' }}
+                            </td>
+                            <td>
+                                {{ $city->provincia ?? '' }}
+                            </td>
+                            <td>
+                                {{ $city->distrito ?? '' }}
                             </td>
                             <td>
                                 {{ $city->name ?? '' }}

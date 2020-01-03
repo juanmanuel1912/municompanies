@@ -32,6 +32,11 @@ class TerritorioVeci extends Model
         return $this->hasMany(Company::class, 'territorio_veci_id', 'id');
     }
 
+    public function territorioVeciCentrosEducativos()
+    {
+        return $this->hasMany(CentrosEducativo::class, 'territorio_veci_id', 'id');
+    }
+
     public function city()
     {
         return $this->belongsTo(City::class, 'city_id');
